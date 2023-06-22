@@ -16,6 +16,12 @@
 .NOTES
     Ensure '01_lab-parameters.ps1' has been executed prior to this script to ensure all necessary parameters are available.
     Variables set in this script will be available in the current PowerShell session and can be used by other scripts that are run in the same session.
+
+.NOTES
+    Version: 2.0
+    Creation Date: 2023-05-15
+    Copyright (c) 2023 https://github.com/bentman
+    https://github.com/bentman/PoShAzureLabs
 #>
 
 # Dot source parameters file
