@@ -16,6 +16,12 @@
     Running this script alone won't have any effect. It's meant to be dot-sourced by other scripts.
     Ensure that the parameters defined in this script align with your Azure account and desired infrastructure configuration.
     Please note that creating or managing resources in Azure may incur costs.
+
+.NOTES
+    Version: 2.0
+    Creation Date: 2023-05-15
+    Copyright (c) 2023 https://github.com/bentman
+    https://github.com/bentman/PoShAzureLabs
 #>
 
 # Virtual Lab Network parameters
