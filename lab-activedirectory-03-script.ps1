@@ -17,6 +17,12 @@
     Requires Azure PowerShell module and user must be logged into their Azure account.
     Ensure you have the correct permissions on your Azure account to perform these operations.
     Please note that creating or managing resources in Azure may incur costs.
+
+.NOTES
+    Version: 2.0
+    Creation Date: 2023-05-15
+    Copyright (c) 2023 https://github.com/bentman
+    https://github.com/bentman/PoShAzureLabs
 #>
 
 # Dot source parameters files
