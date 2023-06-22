@@ -16,6 +16,12 @@
 .NOTES
     Requires internet access. 
     May modify PowerShell Gallery installation policy and install Azure CLI.
+
+.NOTES
+    Version: 2.0
+    Creation Date: 2023-05-15
+    Copyright (c) 2023 https://github.com/bentman
+    https://github.com/bentman/PoShAzureLabs
 #>
 
 # Define Azure CLI download URL
