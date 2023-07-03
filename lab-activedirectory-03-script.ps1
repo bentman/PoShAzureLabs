@@ -1,23 +1,18 @@
 <#
 .SYNOPSIS
     Creates a Spot Windows Server VM in Azure with Active Directory configured.
-
 .DESCRIPTION
     This script creates a Spot Windows Server VM, configures a static IP, and sets up Active Directory. 
     The VM is designed to host Active Directory services for the lab environment.
-
 .PARAMETERS
     No parameters accepted. This script dot-sources the parameters from '01_lab-parameters.ps1' and 'lab-activedirectory-parameters.ps1'.
-
 .EXAMPLE
     .\06_lab-active-directory.ps1
     This example runs the script and prompts for the required credentials to create a Spot Windows Server VM with Active Directory configured.
-
 .NOTES
     Requires Azure PowerShell module and user must be logged into their Azure account.
     Ensure you have the correct permissions on your Azure account to perform these operations.
     Please note that creating or managing resources in Azure may incur costs.
-
 .NOTES
     Version: 2.0
     Creation Date: 2023-05-15
