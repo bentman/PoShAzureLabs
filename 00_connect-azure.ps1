@@ -1,22 +1,15 @@
 <#
 .SYNOPSIS
     Script ensures Azure CLI is installed and prompts the user to connect to Azure.
-
 .DESCRIPTION
     Checks for Azure CLI, verifies internet connection, downloads and installs Azure CLI if needed. 
     Validates the installation, checks and adjusts trust level of PowerShell Gallery if necessary. 
     Prompts for Azure login.
-
-.PARAMETERS
-    No parameters accepted.
-
 .EXAMPLE
     .\00_connect-azure.ps1
-
 .NOTES
     Requires internet access. 
     May modify PowerShell Gallery installation policy and install Azure CLI.
-
 .NOTES
     Version: 2.0
     Creation Date: 2023-05-15
