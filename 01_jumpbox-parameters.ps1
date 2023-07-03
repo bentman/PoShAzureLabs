@@ -1,22 +1,15 @@
 <#
 .SYNOPSIS
     Defines parameters for managing Azure lab jumpbox resources.
-
 .DESCRIPTION
     Sets up parameters specific to the lab jumpbox, including resource group, virtual network, subnet, and VM details. 
     These parameters are dot-sourced by other scripts to manage the Azure lab jumpbox.
-
-.PARAMETERS
-    No parameters accepted.
-
 .EXAMPLE
     .\01_jumpbox-parameters.ps1
-
 .NOTES
     Running this script alone won't have any effect. It's meant to be dot-sourced by other scripts.
     Ensure that the parameters defined in this script align with your Azure account and desired infrastructure configuration.
     Please note that creating or managing resources in Azure may incur costs.
-
 .NOTES
     Version: 2.0
     Creation Date: 2023-05-15
