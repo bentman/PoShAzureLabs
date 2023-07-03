@@ -1,21 +1,16 @@
 ﻿<#
 .SYNOPSIS
     Configures the network for the Active Directory lab.
-
 .DESCRIPTION
     Updates the virtual network and subnet configurations, associates a NAT Gateway with the subnet, and sets up Network Security Group rules to allow all traffic from the Jumpbox network.
-
 .PARAMETERS
     No parameters accepted. This script dot-sources the parameters from 'lab-activedirectory-01-parameters.ps1'.
-
 .EXAMPLE
     .\lab-activedirectory-02-network.ps1
-
 .NOTES
     Requires Azure PowerShell module and user must be logged into their Azure account.
     Ensure you have the correct permissions on your Azure account to perform these operations.
     Please note that creating or managing resources in Azure may incur costs.
-
 .NOTES
     Version: 2.0
     Creation Date: 2023-05-15
