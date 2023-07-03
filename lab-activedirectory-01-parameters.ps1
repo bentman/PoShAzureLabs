@@ -1,22 +1,17 @@
 <#
 .SYNOPSIS
     Sets parameters required for the Active Directory lab environment.
-
 .DESCRIPTION
     This script sets the necessary parameters for creating an Active Directory environment in Azure. 
     It dot-sources '01_lab-parameters.ps1' to inherit previously set parameters and then sets additional parameters specific to the Active Directory setup.
-
 .PARAMETERS
     No parameters accepted. This script dot-sources the parameters from '01_lab-parameters.ps1' and sets additional parameters for Active Directory.
-
 .EXAMPLE
     .\lab-activedirectory-01-parameters.ps1
     This example runs the script and sets the parameters required for the Active Directory environment.
-
 .NOTES
     Ensure '01_lab-parameters.ps1' has been executed prior to this script to ensure all necessary parameters are available.
     Variables set in this script will be available in the current PowerShell session and can be used by other scripts that are run in the same session.
-
 .NOTES
     Version: 2.0
     Creation Date: 2023-05-15
