@@ -1,22 +1,17 @@
 <#
 .SYNOPSIS
     Creates an Azure virtual network with a configured subnet to host jumpbox VMs.
-
 .DESCRIPTION
     Sets up the virtual network, subnet configurations, and network security group rules. 
     The subnet is designed to host jumpbox VMs that provide connectivity to labs in other adjacent subnets.
-
 .PARAMETERS
     No parameters accepted. This script dot-sources the parameters from '01_jumpbox-parameters.ps1'.
-
 .EXAMPLE
     .\02_jumpbox-network.ps1
-
 .NOTES
     Requires Azure PowerShell module and user must be logged into their Azure account.
     Ensure you have the correct permissions on your Azure account to perform these operations.
     Please note that creating or managing resources in Azure may incur costs.
-
 .NOTES
     Version: 2.0
     Creation Date: 2023-05-15
