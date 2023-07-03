@@ -22,30 +22,30 @@ $AzureCliInstallerUrl = "https://aka.ms/installazurecliwindows"
 
 # Check if Azure CLI is installed
 if (!(Get-Command az -ErrorAction SilentlyContinue)) {
-    Write-Host "Azure CLI is not installed. Installing now..."
+    Write-Host "`nAzure CLI is not installed. Installing now..."
     # Check internet connection before downloading
     try {
         $internetTest = Test-NetConnection -ComputerName www.microsoft.com -InformationLevel Quiet
         if (!$internetTest) {
-            Write-Host "No internet connection. Can't download Azure CLI."
+            Write-Host "`nNo internet connection. Can't download Azure CLI."
             Exit
         }
     } catch {
-        Write-Host "Failed to check internet connection."
+        Write-Host "`nFailed to check internet connection."
         Exit
     }
     # Download the installer
     try {
         Start-BitsTransfer -Source $AzureCliInstallerUrl -Destination .\AzureCLI.msi
     } catch {
-        Write-Host "Failed to download Azure CLI."
+        Write-Host "`nFailed to download Azure CLI."
         Exit
     }
     # Install Azure CLI
     try {
         Start-Process msiexec.exe -Wait -ArgumentList "/I .\AzureCLI.msi /quiet"
     } catch {
-        Write-Host "Failed to install Azure CLI."
+        Write-Host "`nFailed to install Azure CLI."
         Exit
     }
     # Remove the installer if it exists
@@ -55,16 +55,16 @@ if (!(Get-Command az -ErrorAction SilentlyContinue)) {
 
     # Check if Azure CLI is now installed
     if (!(Get-Command az -ErrorAction SilentlyContinue)) {
-        Write-Host "Azure CLI installation failed. Attempting to install from PowerShell Gallery..."
+        Write-Host "`nAzure CLI installation failed. Attempting to install from PowerShell Gallery..."
         # Check if PowerShell Gallery is trusted
         if ((Get-PSRepository -Name "PSGallery").InstallationPolicy -ne "Trusted") {
-            Write-Host "PowerShell Gallery is not trusted. You may need to trust it to install modules from it."
+            Write-Host "`nPowerShell Gallery is not trusted. You may need to trust it to install modules from it."
             # Ask user for confirmation
-            $userConfirmation = Read-Host "Do you want to trust PowerShell Gallery? (y/n)"
+            $userConfirmation = Read-Host "`nDo you want to trust PowerShell Gallery? (y/n)"
             if ($userConfirmation -eq "y") {
                 Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
             } else {
-                Write-Host "Cannot install Azure CLI without trusting PowerShell Gallery."
+                Write-Host "`nCannot install Azure CLI without trusting PowerShell Gallery."
                 Exit
             }
         }
@@ -75,15 +75,15 @@ if (!(Get-Command az -ErrorAction SilentlyContinue)) {
     # Validate Azure CLI installation
     try {
         az --version | Out-Null
-        Write-Host "Azure CLI is installed successfully."
+        Write-Host "`nAzure CLI is installed successfully."
     } catch {
-        Write-Host "Failed to verify Azure CLI installation."
+        Write-Host "`nFailed to verify Azure CLI installation."
         Exit
     }
 } else {
-    Write-Host "Azure CLI is already installed."
+    Write-Host "`nAzure CLI is already installed."
 }
 
 # Prompt user to connect to Azure
-Write-Host "Please log in to your Azure account."
+Write-Host "`nPlease log in to your Azure account."
 az login
