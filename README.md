@@ -1,10 +1,12 @@
-## NOTE! Building cloud labs with PowerShell has many advantages over manual "point-click-next-next-create" steps in web portals.
+# NOTE! 
 
-# BUT ... Infrastructure as Code (IaC) is even better - and even easier!
+Building cloud labs with PowerShell has many advantages over manual "point-click-next-next-create" steps in web portals.
+
+## BUT ... Infrastructure as Code (IaC) is even better - and even easier!
 
 - [Join the Learning Adventure here...](https://github.com/bentman/TerraformAzure)
 
-# Azure Lab Automation PowerShell Scripts
+## Azure Lab Automation PowerShell Scripts
 
 This repository contains a set of PowerShell scripts designed to automate the creation and management of lab environments in Microsoft Azure. These scripts can create both Windows and Linux VMs and configure them with various services, including an Active Directory server.
 
