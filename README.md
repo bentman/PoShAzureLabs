@@ -1,6 +1,6 @@
 # NOTE! 
 
-Building cloud labs with PowerShell has many advantages over manual "point-click-next-next-create" steps in web portals.
+Building cloud labs with PowerShell has advantages over "point-click-next-next-create" in web portals.
 
 ## BUT ... Infrastructure as Code (IaC) is even better - and even easier!
 
