@@ -6,7 +6,7 @@ Building cloud labs with PowerShell has advantages over "point-click-next-next-c
 
 - [Join the Learning Adventure here...](https://github.com/bentman/TerraformAzure)
 
-## Azure Lab Automation PowerShell Scripts
+## Azure Lab Automation PowerShell Scripts (BTW: "So last decade...")
 
 This repository contains a set of PowerShell scripts designed to automate the creation and management of lab environments in Microsoft Azure. These scripts can create both Windows and Linux VMs and configure them with various services, including an Active Directory server.
 
